@@ -1,7 +1,21 @@
 ---
-
-- name: start {{ payload }}
+- name: restart-haproxy
   service:
-    name: tomcat
-    state: started
-
+    name: haproxy
+    state: restarted---
+- name: restart-haproxy
+  service:
+    name: haproxy
+    state: restarted---
+- name: restart-haproxy
+  service:
+    name: haproxy
+    state: restarted---
+- name: restart-haproxy
+  service:
+    name: haproxy
+    state: restarted---
+- name: restart-haproxy
+  service:
+    name: haproxy
+    state: restarted
