@@ -3,7 +3,7 @@
 # tasks file for osp.servers
 - name: Create, start and add floating IP on OSP servers
   include_tasks: create-server.yml
-  loop: "{{ osp_servers }}"
+  loop: "{{ __osp_servers }}"
   loop_control:
     loop_var: _server
     label: "{{ _server.name }}"
